@@ -127,7 +127,7 @@ main(void)
     }
 
     // Launch the Vector Add CUDA Kernel
-
+    int dev = 0;
     cudaSetDevice(dev);
     cudaDeviceProp deviceProp;
     cudaGetDeviceProperties(&deviceProp, dev);
